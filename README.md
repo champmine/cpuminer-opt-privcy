@@ -190,7 +190,7 @@ Donations
 
 cpuminer-opt has no fees of any kind but donations are accepted.
 
- BTC: 12tdvfF7KmAsihBXQXynT6E6th2c2pByTT
+ BTC: 334eqcm8w1ovRzzbVy3WEgvdCe3CvDPXGZ
  ETH: 0x72122edabcae9d3f57eab0729305a425f6fef6d0
  LTC: LdUwoHJnux9r9EKqFWNvAi45kQompHk6e8
  BCH: 1QKYkB6atn4P7RFozyziAXLEnurwnUM1cQ
