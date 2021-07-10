@@ -1,10 +1,10 @@
 #!/bin/bash
 
-LOCAL_LIB="$HOME/usr/lib"
+LOCAL_LIB=`pwd`
 
 export LDFLAGS="-L$LOCAL_LIB/curl/lib/.libs -L$LOCAL_LIB/gmp/.libs -L$LOCAL_LIB/openssl"
 
-F="--with-curl=$LOCAL_LIB/curl --with-crypto=$LOCAL_LIB/openssl --host=x86_64-w64-mingw32"
+F="--with-curl=$LOCAL_LIB/curl --with-curl=$LOCAL_LIB/gmp --with-crypto=$LOCAL_LIB/openssl --host=x86_64-w64-mingw32"
 
 sed -i 's/"-lpthread"/"-lpthreadGC2"/g' configure.ac
 
