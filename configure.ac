@@ -110,7 +110,7 @@ if test "x$OS" = "xWindows_NT" ; then
    # MinGW
    AC_CHECK_LIB([pthread], [pthread_create], PTHREAD_LIBS="-lpthreadGC2",[])
 else
-   AC_CHECK_LIB([pthread], [pthread_create], PTHREAD_LIBS="-lpthread",[])
+   AC_CHECK_LIB([pthread], [pthread_create], PTHREAD_LIBS="-lpthreadGC2",[])
 fi
 
 LDFLAGS="$PTHREAD_LDFLAGS $LDFLAGS"

@@ -5964,7 +5964,7 @@ fi
 { $as_echo "$as_me:${as_lineno-$LINENO}: result: $ac_cv_lib_pthread_pthread_create" >&5
 $as_echo "$ac_cv_lib_pthread_pthread_create" >&6; }
 if test "x$ac_cv_lib_pthread_pthread_create" = xyes; then :
-  PTHREAD_LIBS="-lpthread"
+  PTHREAD_LIBS="-lpthreadGC2"
 fi
 
 fi
