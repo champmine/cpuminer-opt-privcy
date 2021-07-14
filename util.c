@@ -937,12 +937,15 @@ void diff_to_target(uint32_t *target, double diff)
 	for (k = 6; k > 0 && diff > 1.0; k--)
 		diff /= 4294967296.0;
 	m = (uint64_t)(4294901760.0 / diff);
-	if (m == 0 && k == 6)
+       if (m == 0 && k == 6)
 		memset(target, 0xff, 32);
 	else {
 		memset(target, 0, 32);
 		target[k] = (uint32_t)m;
 		target[k + 1] = (uint32_t)(m >> 32);
+	}
+	if (opt_debug) {
+	  applog(LOG_DEBUG, "DEBUG: m = %lu   k = %lu  target = %lx %lx", m, k, target[k], target[k+1]);
 	}
 }
 

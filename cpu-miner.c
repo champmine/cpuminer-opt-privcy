@@ -2335,6 +2335,11 @@ void std_stratum_gen_work( struct stratum_ctx *sctx, struct work *g_work )
 
    algo_gate.set_target( g_work, sctx->job.diff );
 
+   if ( opt_debug )
+   {
+     applog( LOG_DEBUG, "DEBUG: net_diff %le  stratum_diff %le  sctx.job.diff %le", net_diff, stratum_diff, sctx->job.diff);
+   }
+   
    if ( stratum_diff != sctx->job.diff )
    {
      char sdiff[32] = { 0 };
